@@ -16,11 +16,11 @@ export default function Search({title}) {
   React.useEffect(() => {
     (async () => {
       const newsData = await fetch(
-        `https://newsapi.org/v2/everything?q=${title}&pageSize=24&from=${monthAgo}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
+        `https://newsapi.org/v2/everything?q=${name.title}&pageSize=24&from=${monthAgo}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
       ).then((response) => response.json());
       setNewsData(newsData.articles);
     })();
-  }, [monthAgo, title]);
+  }, [monthAgo, name.title]);
 
   return (
     <Container maxW={'full'}>
