@@ -16,6 +16,7 @@ export default function Card({ newsDataItem }) {
       <Box
         maxW={"445"}
         w={"full"}
+        h={'full'}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         rounded={"md"}
