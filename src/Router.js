@@ -12,7 +12,7 @@ export default function Router() {
       <Route path="/" element={<Indonesia />} />
       <Route path="/Programming" element={<Programming />} />
       <Route path="/COVID-19" element={<Covid19 />} />
-      <Route path="/Search" element={<Search />} />
+      <Route path="/Search/:title" element={<Search />} />
       <Route path="/Saved" element={<Saved />} />
     </Routes>
   );
